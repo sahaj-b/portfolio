@@ -10,6 +10,7 @@ function MainCard({ angleToggled, setAngleToggled }) {
       angleToggled={angleToggled}
       setHovered={setHovered}
       hovered={hovered}
+      startAnimation="animate-[startCard_0.5s_ease-in-out]"
     >
       <div className="flex items-center justify-center space-x-16 w-[40em] h-44">
         <div className="absolute top-0 left-0 m-10">
@@ -28,7 +29,7 @@ function MainCard({ angleToggled, setAngleToggled }) {
           <h2
             className={`text-2xl text-subtext1 font-poppins ${angleToggled ? "pt-3" : ""}`}
           >
-            {angleToggled ? "FullStack Dev" : " Frontend Developer"}
+            {angleToggled ? "FullStack Developer" : " Frontend Developer"}
             <span className={`font-play ${angleToggled ? "" : "hidden"}`}>
               {" Soon!"}
             </span>
@@ -43,25 +44,25 @@ function MainCard({ angleToggled, setAngleToggled }) {
             angleToggled={angleToggled}
             iconClass="nf-fa-github"
             accent="#cdd6f4"
-            hovered={hovered}
+            parentHovered={hovered}
           />
           <Socials
             angleToggled={angleToggled}
             iconClass="nf-fa-linkedin"
             accent="#89b4fa"
-            hovered={hovered}
+            parentHovered={hovered}
           />
           <Socials
             angleToggled={angleToggled}
             iconClass="nf-fa-instagram"
             accent="#f38ba8"
-            hovered={hovered}
+            parentHovered={hovered}
           />
           <Socials
             angleToggled={angleToggled}
             iconClass="nf-fa-discord"
             accent="#b4befe"
-            hovered={hovered}
+            parentHovered={hovered}
           />
         </div>
       </div>

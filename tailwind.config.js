@@ -11,8 +11,18 @@ export default {
       },
       startHead: {
         "0%": { top: '-0.8px', left: '-0.5px' },
-        "70%": { top: '-0.8px', left: '-0.5px' },
+        "50%": { top: '-0.8px', left: '-0.5px' },
         "100%": { top: '-0.5rem', left: '0.5rem' }
+      },
+      startCard: {
+        "0%": { top: '-0.8px', left: '-0.5px' },
+        "20%": { top: '-0.8px', left: '-0.5px' },
+        "100%": { top: '-0.5rem', left: '0.5rem' }
+      },
+      startSocials: {
+        "0%": { top: '-0.4rem', left: '0.4rem' },
+        "20%": { top: '-0.4rem', left: '0.4rem' },
+        "100%": { top: '0', left: '0' }
       },
     },
     screens: {
