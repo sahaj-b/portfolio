@@ -1,17 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import StripedBox from "./StripedBox";
 import ProjectCard from "./ProjectCard";
 import { Header } from "./Showcase";
 import projects from "./data/projects.json";
-function Projects({
-  setHoveredProjectSkills,
-  headingFloating,
-  setHeadingFloating,
-}) {
+function Projects({ setHoveredProjectSkills, headingFloating }) {
   const [hovered, setHovered] = useState(false);
-  useEffect(() => {
-    setHeadingFloating(hovered);
-  }, [hovered, setHeadingFloating]);
   return (
     <StripedBox hovered={hovered} setHovered={setHovered}>
       <Header
@@ -32,7 +25,7 @@ function Projects({
         })}
       </div>
 
-      <div className="text-3xl text-subtext0 text-center font-bold opacity-80 mt-10 mb-2 ">
+      <div className="mb-2 mt-10 text-center text-3xl font-bold text-subtext0 opacity-80">
         Other Stuff
       </div>
       <div className="flex w-[40rem] flex-wrap gap-10 p-5">

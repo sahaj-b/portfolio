@@ -3,7 +3,7 @@ import { AngleToggledContext } from "./context/angleToggledContext";
 function Socials({ iconClass, accent, parentHovered }) {
   const angleToggled = useContext(AngleToggledContext).angleToggled;
   let striped = {
-    backgroundImage: `repeating-linear-gradient(-45deg, #1e1e2e, #1e1e2e 7px, ${accent} 7px, ${accent} 12px)`,
+    backgroundImage: `repeating-linear-gradient(-45deg, var(--secondary), var(--secondary) 7px, ${accent} 7px, ${accent} 12px)`,
     backgroundClip: "padding-box",
   };
   return (

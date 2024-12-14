@@ -4,15 +4,16 @@ function StripedBox({
   children,
   setHovered = () => {},
   hovered = false,
-  startAnimation = "",
+  startAnimation,
+  bgColor = "bg-baseClr",
+  roundClass = "rounded-xl",
+  padClass = "p-6",
 }) {
   const angleToggled = useContext(AngleToggledContext).angleToggled;
-  const clr = angleToggled ? "#89b4fa" : "#cba6f7";
   let striped = {
-    backgroundImage: `repeating-linear-gradient(-45deg, #1e1e2e, #1e1e2e 15px, ${clr} 15px, ${clr} 25px)`,
+    backgroundImage: `repeating-linear-gradient(-45deg, var(--secondary), var(--secondary) 15px, var(--primary) 15px, var(--primary) 25px)`,
     backgroundAttachment: "fixed",
-    backgroundClip: "padding-box",
-    border: "1px solid " + clr,
+    border: "1px solid var(--primary)",
   };
   let positionLogic = "";
   if (hovered) {
@@ -23,12 +24,12 @@ function StripedBox({
 
   return (
     <div
-      className={`rounded-xl bg-mantle shadow-[inset_0_0_2px_2px_rgba(0,0,0,0.5)]`}
+      className={`${roundClass} bg-mantle shadow-[inset_0_0_2px_2px_rgba(0,0,0,0.5)]`}
       style={striped}
     >
       <div
-        className={`${positionLogic} relative min-h-24 rounded-xl bg-baseClr p-6 shadow shadow-mantle transition-all ${startAnimation}`}
-        style={{ border: "1px solid " + clr }}
+        className={`${positionLogic} relative ${roundClass} ${bgColor} ${padClass} shadow shadow-mantle transition-all ${startAnimation}`}
+        style={{ border: "1px solid var(--primary)" }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >

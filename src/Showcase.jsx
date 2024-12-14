@@ -8,7 +8,9 @@ function Showcase({}) {
   const [headingFloating, setHeading] = useState(false);
   return (
     <div
-      className={`flex items-start justify-between space-x-10 pt-16 transition-all`}
+      className={`flex w-full items-start justify-center space-x-10 pt-16 transition-all`}
+      onMouseEnter={() => setHeading(true)}
+      onMouseLeave={() => setHeading(false)}
     >
       <Skills
         hoveredProjectSkills={hoveredProjectSkills}
@@ -38,7 +40,7 @@ function Header({
         {text}
       </h1>
       <div
-        className={` ${hiddenTextSize} relative mb-2 text-center font-bold text-subtext0 opacity-80 transition-all ${headingFloating ? "left-1 -top-2" : "-top-4 left-0"}`}
+        className={` ${hiddenTextSize} relative mb-2 text-center font-bold text-subtext0 opacity-80 transition-all ${headingFloating ? "-top-2 left-1" : "-top-4 left-0"}`}
       >
         {hiddenText}
       </div>

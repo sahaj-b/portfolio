@@ -73,8 +73,6 @@ export default {
         baseClr: "var(--base)",
         mantle: "var(--mantle)",
         crust: "var(--crust)",
-        primary: "var(--mauve)",
-        secondary: "var(--base)",
       },
     }
   },

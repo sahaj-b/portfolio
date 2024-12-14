@@ -2,38 +2,23 @@ import { useRef, useEffect } from "react";
 
 function DotsBackground() {
   const canvasRef = useRef(null);
-  const rosewater = "#f5e0dc";
-  const flamingo = "#f2cdcd";
-  const pink = "#f5c2e7";
-  const mauve = "#cba6f7";
-  const red = "#f38ba8";
-  const maroon = "#eba0ac";
-  const peach = "#fab387";
-  const yellow = "#f9e2af";
-  const green = "#a6e3a1";
-  const teal = "#94e2d5";
-  const sky = "#89dceb";
-  const sapphire = "#74c7ec";
-  const blue = "#89b4fa";
-  const lavender = "#b4befe";
-  const text = "#cdd6f4";
 
   const colors = [
-    rosewater,
-    flamingo,
-    pink,
-    mauve,
-    red,
-    maroon,
-    peach,
-    yellow,
-    green,
-    teal,
-    sky,
-    sapphire,
-    blue,
-    lavender,
-    text,
+    "rosewater",
+    "flamingo",
+    "pink",
+    "mauve",
+    "red",
+    "maroon",
+    "peach",
+    "yellow",
+    "green",
+    "teal",
+    "sky",
+    "sapphire",
+    "blue",
+    "lavender",
+    "text",
   ];
 
   const dotSize = 3;
@@ -60,7 +45,9 @@ function DotsBackground() {
           dots.push({
             x,
             y,
-            color: colors[Math.floor(Math.random() * colors.length)],
+            color: getComputedStyle(root).getPropertyValue(
+              "--" + colors[Math.floor(Math.random() * colors.length)],
+            ),
           });
         }
       }
@@ -99,7 +86,7 @@ function DotsBackground() {
     let animationFrameId;
     const handleMouseMove = (e) => {
       const mouseX = e.clientX;
-      const mouseY = e.coientY;
+      const mouseY = e.clientY;
       animationFrameId = requestAnimationFrame(() => drawDots(mouseX, mouseY));
     };
 

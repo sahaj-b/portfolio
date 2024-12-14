@@ -26,7 +26,7 @@ function MainCard({}) {
         </div>
         <div className={`flex flex-col justify-center space-y-2`}>
           <h1
-            className={`tracking-wide relative -left-1 text-5xl ${angleToggled ? "font-play" : "font-poppins"}`}
+            className={`relative -left-1 text-5xl tracking-wide ${angleToggled ? "font-play" : "font-poppins"}`}
           >
             Sahaj Bhatt
           </h1>

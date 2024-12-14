@@ -2,12 +2,11 @@ import { useContext } from "react";
 import { AngleToggledContext } from "./context/angleToggledContext";
 function HeadShot({ hovered }) {
   const { angleToggled, setAngleToggled } = useContext(AngleToggledContext);
-  let clr = angleToggled ? "#89b4fa" : "#cba6f7";
   let striped = {
-    backgroundImage: `linear-gradient(-45deg, #1e1e2e 25%, ${clr} 25%, ${clr} 50%, #1e1e2e 50%, #1e1e2e 75%, ${clr} 75%, ${clr} 100%)`,
+    backgroundImage: `linear-gradient(-45deg, var(--secondary) 25%, var(--primary) 25%, var(--primary) 50%, var(--secondary) 50%, var(--secondary) 75%, var(--primary) 75%, var(--primary) 100%)`,
     backgroundSize: "40px 40px",
     backgroundAttachment: "scroll",
-    border: "1px solid " + clr,
+    border: "1px solid var(--primary)",
     transition: "all",
   };
   return (
