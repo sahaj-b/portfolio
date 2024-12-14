@@ -1,4 +1,7 @@
-function Socials({ angleToggled, iconClass, accent, parentHovered }) {
+import { useContext } from "react";
+import { AngleToggledContext } from "./context/angleToggledContext";
+function Socials({ iconClass, accent, parentHovered }) {
+  const angleToggled = useContext(AngleToggledContext).angleToggled;
   let striped = {
     backgroundImage: `repeating-linear-gradient(-45deg, #1e1e2e, #1e1e2e 7px, ${accent} 7px, ${accent} 12px)`,
     backgroundClip: "padding-box",
@@ -9,9 +12,7 @@ function Socials({ angleToggled, iconClass, accent, parentHovered }) {
       style={striped}
     >
       <div
-        className={`transition-all relative bg-base rounded-full px-2.5 py-1.5 cursor-pointer active:top-0 active:left-0 animate-[startSocials_0.5s_ease-in-out] duration-100
-                    ${parentHovered ? (angleToggled ? "top-1 -left-1" : "-top-1 left-1") : "top-0 left-0"}
-                    ${angleToggled ? "hover:top-0.5 hover:-left-0.5" : "hover:-top-0.5 hover:left-0.5"}`}
+        className={`relative animate-[startSocials_0.5s_ease-in-out] cursor-pointer rounded-full bg-baseClr px-2.5 py-1.5 transition-all duration-100 active:left-0 active:top-0 ${parentHovered ? (angleToggled ? "-left-1 top-1" : "-top-1 left-1") : "left-0 top-0"} ${angleToggled ? "hover:-left-0.5 hover:top-0.5" : "hover:-top-0.5 hover:left-0.5"}`}
       >
         <span
           className={`nf ${iconClass} text-xl`}

@@ -99,7 +99,7 @@ function DotsBackground() {
     let animationFrameId;
     const handleMouseMove = (e) => {
       const mouseX = e.clientX;
-      const mouseY = e.clientY;
+      const mouseY = e.coientY;
       animationFrameId = requestAnimationFrame(() => drawDots(mouseX, mouseY));
     };
 
@@ -118,7 +118,7 @@ function DotsBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="bg-mantle fixed top-0 left-0 w-full h-full -z-10"
+      className="fixed left-0 top-0 -z-10 h-full w-full bg-mantle"
     ></canvas>
   );
 }

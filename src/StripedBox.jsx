@@ -1,26 +1,33 @@
+import { useContext } from "react";
+import { AngleToggledContext } from "./context/angleToggledContext";
 function StripedBox({
   children,
-  angleToggled,
-  clr = angleToggled ? "#89b4fa" : "#cba6f7",
-  hovered = false,
   setHovered = () => {},
+  hovered = false,
   startAnimation = "",
-  fullDown = false,
 }) {
+  const angleToggled = useContext(AngleToggledContext).angleToggled;
+  const clr = angleToggled ? "#89b4fa" : "#cba6f7";
   let striped = {
     backgroundImage: `repeating-linear-gradient(-45deg, #1e1e2e, #1e1e2e 15px, ${clr} 15px, ${clr} 25px)`,
     backgroundAttachment: "fixed",
     backgroundClip: "padding-box",
     border: "1px solid " + clr,
   };
+  let positionLogic = "";
+  if (hovered) {
+    positionLogic = angleToggled ? "-left-1 top-1" : "-top-1 left-1";
+  } else {
+    positionLogic = angleToggled ? "-left-2 top-2" : "-top-2 left-2";
+  }
 
   return (
     <div
-      className={`shadow-[inset_0_0_2px_2px_rgba(0,0,0,0.5)] bg-mantle rounded-xl`}
+      className={`rounded-xl bg-mantle shadow-[inset_0_0_2px_2px_rgba(0,0,0,0.5)]`}
       style={striped}
     >
       <div
-        className={`shadow-mantle shadow relative ${fullDown ? "hover:top-0 hover:left-0" : angleToggled ? "hover:top-1 hover:-left-1" : "hover:-top-1 hover:left-1"} ${angleToggled ? "top-2 -left-2" : "-top-2 left-2"} transition-all min-w-64 min-h-24 bg-base rounded-xl p-6 ${startAnimation}`}
+        className={`${positionLogic} relative min-h-24 rounded-xl bg-baseClr p-6 shadow shadow-mantle transition-all ${startAnimation}`}
         style={{ border: "1px solid " + clr }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}

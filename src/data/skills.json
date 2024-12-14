@@ -1,0 +1,15 @@
+{
+  "stack":{
+    "html": {"name":"HTML5", "icon":"nf-dev-html5", "color":"peach" },
+    "css": {"name":"CSS", "icon":"nf-dev-html5", "color":"peach"},
+    "js": {"name":"JavaScript", "icon":"nf-dev-html5", "color":"peach"},
+    "react": {"name":"React", "icon":"nf-dev-html5", "color":"peach"},
+    "tailwind": {"name":"Tailwind", "icon":"nf-dev-html5", "color":"peach"},
+    "git": {"name":"Git", "icon":"nf-dev-html5", "color":"peach"}
+  },
+  "tools": {
+    "html7": {"name":"HTML", "icon":"nf-dev-html5", "color":"peach"},
+    "html8": {"name":"HTML", "icon":"nf-dev-html5", "color":"peach"},
+    "html9": {"name":"HTML", "icon":"nf-dev-html5", "color":"peach"}
+  }
+}

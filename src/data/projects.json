@@ -1,0 +1,70 @@
+{
+  "WebDev":[
+    {
+      "name": "Claude AI Frontend Clone",
+      "description": "This is a very nice Claude AI Frontend Clone which is very good like very good",
+      "github": "https://github.com/sahaj-b/claudeAI-frontend-clone",
+      "demo": "https://sahaj-claude-clone.vercel.app/",
+      "image": "https://placehold.co/600x400",
+      "skills": ["html", "css", "js", "react", "tailwind"],
+      "color": "red"
+    },
+    {
+      "name": "Claude AI Frontend Clone",
+      "description": "This is a very nice Claude AI Frontend Clone which is very good like very good",
+      "github": "https://github.com/sahaj-b/claudeAI-frontend-clone",
+      "demo": "https://sahaj-claude-clone.vercel.app/",
+      "image": "https://placehold.co/600x400",
+      "skills": ["html", "css", "js", "react", "tailwind"],
+      "color": "red"
+    },
+    {
+      "name": "Claude AI Frontend Clone",
+      "description": "This is a very nice Claude AI Frontend Clone which is very good like very good",
+      "github": "https://github.com/sahaj-b/claudeAI-frontend-clone",
+      "demo": "https://sahaj-claude-clone.vercel.app/",
+      "image": "https://placehold.co/600x400",
+      "skills": ["html", "css", "js", "react", "tailwind"],
+      "color": "red"
+    },
+    {
+      "name": "Claude AI Frontend Clone",
+      "description": "This is a very nice Claude AI Frontend Clone which is very good like very good",
+      "github": "https://github.com/sahaj-b/claudeAI-frontend-clone",
+      "demo": "https://sahaj-claude-clone.vercel.app/",
+      "image": "https://placehold.co/600x400",
+      "skills": ["html", "css", "js", "react", "tailwind"],
+      "color": "red"
+    },
+    {
+      "name": "Claude AI Frontend Clone",
+      "description": "This is a very nice Claude AI Frontend Clone which is very good like very good",
+      "github": "https://github.com/sahaj-b/claudeAI-frontend-clone",
+      "demo": "https://sahaj-claude-clone.vercel.app/",
+      "image": "https://placehold.co/600x400",
+      "skills": ["html", "css", "js", "react", "tailwind"],
+      "color": "red"
+    }
+  ],
+  "other":[
+    {
+      "name": "Claude AI Frontend Clone",
+      "description": "This is a very nice Claude AI Frontend Clone which is very good like very good",
+      "github": "https://github.com/sahaj-b/claudeAI-frontend-clone",
+      "demo": "https://sahaj-claude-clone.vercel.app/",
+      "image": "https://placehold.co/600x400",
+      "skills": ["html", "css", "js", "react", "tailwind"],
+      "color": "red"
+    },
+    {
+      "name": "Claude AI Frontend Clone",
+      "description": "This is a very nice Claude AI Frontend Clone which is very good like very good",
+      "github": "https://github.com/sahaj-b/claudeAI-frontend-clone",
+      "demo": "https://sahaj-claude-clone.vercel.app/",
+      "image": "https://placehold.co/600x400",
+      "skills": ["html", "css", "js", "react", "tailwind"],
+      "color": "red"
+    }
+
+  ]
+}
