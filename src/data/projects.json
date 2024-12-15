@@ -72,7 +72,7 @@
     },
     {
       "name": "YAAI Fake Virus",
-      "description": "Remake of YouAreAnIdiot virus with Tkinter becuase I couldn't find any open source version",
+      "description": "Remake of YouAreAnIdiot virus for Windows with Tkinter because I couldn't find any open source version",
       "github": "https://github.com/sahaj-b/YouAreAnIdiot-FakeVirus",
       "image": "./yaai.jpg",
       "skills": ["python"],
