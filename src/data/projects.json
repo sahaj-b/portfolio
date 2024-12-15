@@ -22,7 +22,7 @@
       "name": "Personal Portfolio",
       "description": "Ya like it?",
       "github": "https://github.com/sahaj-b/portfolio",
-      "demo": "",
+      "demo": "https://sahajb.vercel.app",
       "image": "./portfolio.png",
       "skills": ["html", "css", "js", "react", "tailwind"],
       "color": "mauve"
