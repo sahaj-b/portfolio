@@ -8,6 +8,10 @@ export default {
         "0%": { backgroundPosition: '0 0' },
         "100%": { backgroundPosition: '0 40px' }
       },
+      moveStripesReverse: {
+        "0%": { backgroundPosition: '0 40px' },
+        "100%": { backgroundPosition: '0 0' }
+      },
       startHead: {
         "0%": { top: '-0.8px', left: '-0.5px' },
         "50%": { top: '-0.8px', left: '-0.5px' },
