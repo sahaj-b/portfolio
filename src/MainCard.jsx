@@ -46,23 +46,27 @@ function MainCard({}) {
         <div className="absolute right-5 top-4 flex flex-col space-y-2">
           <Socials
             iconClass="nf-fa-github"
-            accent="#cdd6f4"
+            accent="text"
             parentHovered={hovered}
+            link="https://github.com/sahaj-b"
           />
           <Socials
             iconClass="nf-fa-linkedin"
-            accent="#89b4fa"
+            accent="blue"
             parentHovered={hovered}
+            link="https://www.linkedin.com/in/sahaj-bhatt-9b8b381b0/"
           />
           <Socials
-            iconClass="nf-fa-instagram"
-            accent="#f38ba8"
+            iconClass="nf-dev-twitter"
+            accent="text"
             parentHovered={hovered}
+            link="https://x.com/sahajb0606?t=kyDZxXb5766osaZvX7guEw&s=08"
           />
           <Socials
             iconClass="nf-fa-discord"
-            accent="#b4befe"
+            accent="lavender"
             parentHovered={hovered}
+            copyText="sens3459"
           />
         </div>
       </div>

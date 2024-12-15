@@ -1,15 +1,17 @@
 {
   "stack":{
     "html": {"name":"HTML5", "icon":"nf-dev-html5", "color":"peach" },
-    "css": {"name":"CSS", "icon":"nf-dev-html5", "color":"peach"},
-    "js": {"name":"JavaScript", "icon":"nf-dev-html5", "color":"peach"},
-    "react": {"name":"React", "icon":"nf-dev-html5", "color":"peach"},
-    "tailwind": {"name":"Tailwind", "icon":"nf-dev-html5", "color":"peach"},
-    "git": {"name":"Git", "icon":"nf-dev-html5", "color":"peach"}
+    "css": {"name":"CSS", "icon":"nf-dev-css3", "color":"blue"},
+    "js": {"name":"JavaScript", "icon":"nf-dev-javascript", "color":"yellow"},
+    "react": {"name":"React", "icon":"nf-dev-react", "color":"sapphire"},
+    "tailwind": {"name":"Tailwind", "icon":"nf-md-tailwind", "color":"blue"},
+    "mysql": {"name":"MySQL", "icon":"nf-dev-mysql", "color":"blue"},
+    "python": {"name":"Python", "iconImg":"./python.svg", "color":"yellow"},
+    "pygame": {"name":"Pygame", "iconImg":"./pygame.png", "color":"yellow"},
+    "cpp": {"name":"C++", "icon":"nf-custom-cpp", "color":"blue"},
+    "c": {"name":"C", "icon":"nf-custom-c", "color":"blue"},
+    "bash": {"name":"Bash", "icon":"nf-dev-bash", "color":"text"}
   },
-  "tools": {
-    "html7": {"name":"HTML", "icon":"nf-dev-html5", "color":"peach"},
-    "html8": {"name":"HTML", "icon":"nf-dev-html5", "color":"peach"},
-    "html9": {"name":"HTML", "icon":"nf-dev-html5", "color":"peach"}
+  "other": {
   }
 }

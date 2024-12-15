@@ -12,7 +12,7 @@ function Projects({ setHoveredProjectSkills, headingFloating }) {
         headingFloating={headingFloating}
         hiddenText={"Web Dev"}
       />
-      <div className="flex w-[40rem] flex-wrap gap-10 p-5">
+      <div className="flex w-[50rem] flex-wrap gap-10 p-5">
         {projects.WebDev.map((project, index) => {
           return (
             <ProjectCard
@@ -28,7 +28,7 @@ function Projects({ setHoveredProjectSkills, headingFloating }) {
       <div className="mb-2 mt-10 text-center text-3xl font-bold text-subtext0 opacity-80">
         Other Stuff
       </div>
-      <div className="flex w-[40rem] flex-wrap gap-10 p-5">
+      <div className="flex w-[50rem] flex-wrap gap-10 p-5">
         {projects.other.map((project, index) => {
           return (
             <ProjectCard

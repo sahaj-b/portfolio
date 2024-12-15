@@ -1,16 +1,19 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import StripedBox from "./StripedBox";
 import Education from "./Education";
 import Experience from "./Experience";
+import { AngleToggledContext } from "./context/angleToggledContext";
 function Journey() {
   const [switched, setSwitched] = useState(false);
-
+  const angleToggled = useContext(AngleToggledContext).angleToggled;
   return (
     <div className="flex flex-col items-center space-y-8">
-      <div className="flex space-x-2 text-center text-3xl font-bold">
+      <div className="flex text-center text-3xl font-bold">
         <div
           onClick={() => setSwitched(false)}
-          className={"z-10 " + (switched && "cursor-pointer")}
+          className={
+            (switched && "cursor-pointer ") + (angleToggled || "z-10 ")
+          }
         >
           <StripedBox
             bgColor={switched ? "bg-baseClr" : "bg-[var(--primary)]"}

@@ -5,7 +5,7 @@
 
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 
-@layer base {
+@layer colors {
   :root {
     --rosewater: #f5e0dc;
     --flamingo: #f2cdcd;
@@ -38,4 +38,23 @@
     --primary: var(--mauve);
     --secondary: var(--base);
   }
+}
+
+@layer scrollbar {
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    brightness: 0.5;
+}
 }

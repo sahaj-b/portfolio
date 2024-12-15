@@ -1,11 +1,12 @@
 import StripedBox from "./StripedBox";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AngleToggledContext } from "./context/angleToggledContext";
 
 function Experience() {
   const angleToggled = useContext(AngleToggledContext).angleToggled;
+  const [hovered, setHovered] = useState(false);
   return (
-    <StripedBox padClass="p-20">
+    <StripedBox hovered={hovered} setHovered={setHovered} padClass="p-20">
       <div className="text-center flex flex-col justify-center h-52 text-3xl font-bold text-subtext0 opacity-80">
         {angleToggled
           ? "Loading... Please wait for few months"

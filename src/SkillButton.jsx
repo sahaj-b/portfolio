@@ -6,6 +6,24 @@ function SkillButton({ skill, parentHovered }) {
     backgroundImage: `repeating-linear-gradient(-45deg, var(--secondary), var(--secondary) 7px, var(--${skill.color}) 7px, var(--${skill.color}) 12px)`,
     backgroundAttachment: "fixed",
   };
+  let icon = "";
+  if (skill.icon) {
+    icon = (
+      <span
+        className={`nf ${skill.icon} text-3xl`}
+        style={{ color: `var(--${skill.color})` }}
+      ></span>
+    );
+  } else {
+    icon = (
+      <img
+        src={skill.iconImg}
+        alt={skill.name}
+        // className={`nf ${skill.icon} text-3xl`}
+        style={{ color: `var(--${skill.color})` }}
+      ></img>
+    );
+  }
   return (
     <div
       className={`relative rounded-full shadow-[inset_0_0_1px_1px_rgba(0,0,0,0.5)]`}
@@ -35,15 +53,12 @@ function SkillButton({ skill, parentHovered }) {
         className={`${
           parentHovered
             ? angleToggled
-              ? "-left-1 top-2"
-              : "-top-2 left-2"
+              ? "-left-1 top-1.5"
+              : "-top-1.5 left-1.5"
             : "left-0 top-0"
         } ${angleToggled ? "hover:-left-0.5 hover:top-1" : "hover:-top-1 hover:left-1"} relative size-14 rounded-full bg-baseClr p-3 text-center transition-all duration-100 active:left-0 active:top-0`}
       >
-        <span
-          className={`nf ${skill.icon} text-3xl`}
-          style={{ color: `var(--${skill.color})` }}
-        ></span>
+        {icon}
       </div>
     </div>
   );
