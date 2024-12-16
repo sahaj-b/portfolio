@@ -19,12 +19,12 @@ function Tools() {
       }}
     >
       <div className="flex space-x-1 overflow-hidden relative z-10 top-8">
-        <div className="flex animate-[marquee_25.6s_linear_infinite] group-hover:[animation-play-state:paused]">
+        <div className="flex animate-[marquee_26.5s_linear_infinite] group-hover:[animation-play-state:paused]">
           {tools.map((tool, index) => {
             return <ToolButton key={index} tool={tool} />;
           })}
         </div>
-        <div className="flex animate-[marquee2_25.6s_linear_infinite_12.8s] group-hover:[animation-play-state:paused]">
+        <div className="flex animate-[marquee2_26.5s_linear_infinite_13.25s] group-hover:[animation-play-state:paused]">
           {tools.map((tool, index) => {
             return <ToolButton key={index} tool={tool} />;
           })}
