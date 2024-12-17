@@ -4,7 +4,7 @@ function Socials({ link, iconClass, accent, parentHovered, copyText }) {
   const angleToggled = useContext(AngleToggledContext).angleToggled;
   let striped = {
     backgroundImage: `repeating-linear-gradient(-45deg, var(--secondary), var(--secondary) 7px, var(--${accent}) 7px, var(--${accent}) 12px)`,
-    backgroundClip: "padding-box",
+    backgroundAttachment: "scroll",
   };
   return (
     <div

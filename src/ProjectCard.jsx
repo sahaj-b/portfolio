@@ -12,8 +12,8 @@ function ProjectCard({ project, setHoveredProjectSkills, parentHovered }) {
   const angleToggled = useContext(AngleToggledContext).angleToggled;
   let striped = {
     backgroundImage: `repeating-linear-gradient(-45deg, var(--secondary), var(--secondary) 10px, var(--${project.color}) 10px, var(--${project.color}) 20px)`,
-    backgroundAttachment: "fixed",
     border: `1px solid var(--${project.color})`,
+    backgroundAttachment: "scroll",
   };
   return (
     <div
@@ -21,7 +21,7 @@ function ProjectCard({ project, setHoveredProjectSkills, parentHovered }) {
       style={striped}
     >
       <div
-        className={`${parentHovered ? (angleToggled ? "-left-1.5 top-1.5" : "-top-1.5 left-1.5") : "left-0 top-0"} ${angleToggled ? "hover:-left-0 hover:top-0" : "hover:-top-0 hover:left-0"} bg-base group relative flex items-center justify-center overflow-hidden rounded-xl border transition-all duration-100 active:left-0 active:top-0`}
+        className={`${angleToggled ? "-left-1.5 top-1.5 hover:-left-0 hover:top-0" : "-top-1.5 left-1.5 hover:-top-0 hover:left-0"} bg-base group relative flex items-center justify-center overflow-hidden rounded-xl border transition-all duration-100 active:left-0 active:top-0`}
         style={{ border: `1px solid var(--${project.color})` }}
         onMouseEnter={() => setHoveredProjectSkills(project.skills)}
         onMouseLeave={() => setHoveredProjectSkills([])}

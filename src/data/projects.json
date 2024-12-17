@@ -6,16 +6,16 @@
       "github": "https://github.com/sahaj-b/claudeAI-frontend-clone",
       "demo": "https://sahaj-claude-clone.vercel.app/",
       "image": "./claude.png",
-      "skills": ["html", "css", "js", "react", "tailwind"],
+      "skills": ["HTML5", "CSS", "JavaScript", "React", "Tailwind"],
       "color": "red"
     },
     {
       "name": "Super Tic Tac Toe",
       "description": "Super/Ultimate/Multidimensional Tic Tac Toe game with dynamic highlighting of playable areas",
       "github": "https://github.com/sahaj-b/super-tic-tac-toe",
-      "demo": "https://sahaj-b.github.io/super-tic-tac-toe/superTTT.html",
+      "demo": "https://sahaj-b.github.io/super-tic-tac-toe/superTTT.HTML5",
       "image": "./superttt.jpg",
-      "skills": ["html", "css", "js"],
+      "skills": ["HTML5", "CSS", "JavaScript"],
       "color": "blue"
     },
     {
@@ -24,7 +24,7 @@
       "github": "https://github.com/sahaj-b/portfolio",
       "demo": "https://sahajb.vercel.app",
       "image": "./portfolio.png",
-      "skills": ["html", "css", "js", "react", "tailwind"],
+      "skills": ["HTML5", "CSS", "JavaScript", "React", "Tailwind"],
       "color": "mauve"
     }
   ],
@@ -32,10 +32,10 @@
     
     {
       "name": "Flappy Bird Ninja",
-      "description": "Flappy Bird, but it can shoot shurikens to kill bad birds >:)",
+      "description": "Flappy Bird, but it can shoot shurikens to kill bad birds",
       "github": "https://github.com/sahaj-b/flappy-bird-ninja",
       "image": "./flappy.jpg",
-      "skills": ["python", "pygame"],
+      "skills": ["Python", "Pygame"],
       "color": "sky"
     },
     {
@@ -43,7 +43,7 @@
       "description": "A Linux(Wayland)-native CLI that plays custom keyboard sounds globally on keypresses (wayland alternative for mechvibes)",
       "github": "https://github.com/sahaj-b/wayvibes",
       "image": "./wayvibes.png",
-      "skills": ["cpp"],
+      "skills": ["C++"],
       "color": "yellow"
     },
     {
@@ -51,7 +51,7 @@
       "description": "Simple Dino Run game which runs on a terminal",
       "github": "https://github.com/sahaj-b/dino-run-terminal",
       "image": "./dino.png",
-      "skills": ["python"],
+      "skills": ["Python"],
       "color": "green"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Retro Snake game for the Linux terminal, with dynamic speed and grid size controls",
       "github": "https://github.com/sahaj-b/snake-terminal",
       "image": "./snake.png",
-      "skills": ["cpp"],
+      "skills": ["C++"],
       "color": "text"
     },
     {
@@ -67,7 +67,7 @@
       "description": "Lot of Linux scripts for automating my workflow and enhancing productivity",
       "github": "https://github.com/sahaj-b/dotfiles/tree/main/scripts",
       "image": "./scripts.png",
-      "skills": ["cpp", "bash", "python"],
+      "skills": ["C++", "Bash", "Python"],
       "color": "yellow"
     },
     {
@@ -75,7 +75,7 @@
       "description": "Remake of YouAreAnIdiot virus for Windows with Tkinter because I couldn't find any open source version",
       "github": "https://github.com/sahaj-b/YouAreAnIdiot-FakeVirus",
       "image": "./yaai.jpg",
-      "skills": ["python"],
+      "skills": ["Python"],
       "color": "text"
     }
 

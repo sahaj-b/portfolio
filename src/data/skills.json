@@ -1,17 +1,13 @@
-{
-  "stack":{
-    "html": {"name":"HTML5", "icon":"nf-dev-html5", "color":"peach" },
-    "css": {"name":"CSS", "icon":"nf-dev-css3", "color":"blue"},
-    "js": {"name":"JavaScript", "icon":"nf-dev-javascript", "color":"yellow"},
-    "react": {"name":"React", "icon":"nf-dev-react", "color":"sapphire"},
-    "tailwind": {"name":"Tailwind", "icon":"nf-md-tailwind", "color":"blue"},
-    "mysql": {"name":"MySQL", "icon":"nf-dev-mysql", "color":"blue"},
-    "python": {"name":"Python", "iconImg":"./python.svg", "color":"yellow"},
-    "pygame": {"name":"Pygame", "iconImg":"./pygame.png", "color":"yellow"},
-    "cpp": {"name":"C++", "icon":"nf-custom-cpp", "color":"blue"},
-    "c": {"name":"C", "icon":"nf-custom-c", "color":"blue"},
-    "bash": {"name":"Bash", "icon":"nf-dev-bash", "color":"text"}
-  },
-  "other": {
-  }
-}
+[
+    {"name":"HTML5", "icon":"nf-dev-html5", "color":"peach" },
+    {"name":"CSS", "icon":"nf-dev-css3", "color":"blue"},
+    {"name":"JavaScript", "icon":"nf-dev-javascript", "color":"yellow"},
+    {"name":"React", "icon":"nf-dev-react", "color":"sapphire"},
+    {"name":"Tailwind", "icon":"nf-md-tailwind", "color":"blue"},
+    {"name":"MySQL", "icon":"nf-dev-mysql", "color":"blue"},
+    {"name":"Python", "iconImg":"./python.svg", "color":"yellow"},
+    {"name":"Pygame", "iconImg":"./pygame.png", "color":"yellow"},
+    {"name":"C++", "icon":"nf-custom-cpp", "color":"blue"},
+    {"name":"C", "icon":"nf-custom-c", "color":"blue"},
+    {"name":"Bash", "icon":"nf-dev-bash", "color":"text"}
+]

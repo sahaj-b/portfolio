@@ -1,6 +1,6 @@
 [
   {"name": "Neovim", "icon": "nf-custom-neovim", "accent": "green"},
-  {"name": "ArchBTW", "icon": "nf-md-arch", "accent": "blue"},
+  {"name": "Arch BTW", "icon": "nf-md-arch", "accent": "blue"},
   {"name": "Git", "icon": "nf-dev-git", "accent": "red"},
   {"name": "Tmux", "icon": "nf-cod-terminal_tmux", "accent": "green"},
   {"name": "Hyprland", "icon": "nf-linux-hyprland", "accent": "sapphire"},

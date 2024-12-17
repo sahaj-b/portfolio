@@ -12,7 +12,7 @@ function StripedBox({
   const angleToggled = useContext(AngleToggledContext).angleToggled;
   let striped = {
     backgroundImage: `repeating-linear-gradient(-45deg, var(--secondary), var(--secondary) 15px, var(--primary) 15px, var(--primary) 25px)`,
-    backgroundAttachment: "fixed",
+    backgroundAttachment: "scroll",
     border: "1px solid var(--primary)",
   };
   let positionLogic = "";

@@ -2,7 +2,6 @@ import { useState } from "react";
 import StripedBox from "./StripedBox";
 
 function Education() {
-  const [hovered, setHovered] = useState(false);
   let striped = {
     backgroundImage: `linear-gradient(-45deg, var(--secondary) 25%, var(--primary) 25%, var(--primary) 50%, var(--secondary) 50%, var(--secondary) 75%, var(--primary) 75%, var(--primary) 100%)`,
     backgroundSize: "40px 40px",
@@ -23,15 +22,14 @@ function Education() {
     },
   ];
   return (
-    <StripedBox hovered={hovered} setHovered={setHovered} padClass="p-10">
+    <StripedBox padClass="p-10 group">
       <div className="flex flex-col space-y-8">
         <div className="relative flex items-center space-x-3">
           {/* circle */}
           <div className="z-10 size-8 rounded-full bg-[var(--primary)]"></div>
           {/* line */}
           <div
-            className={`absolute -left-0 top-1/2 h-[calc(100%+1rem)] w-2 animate-[moveStripesReverse_2s_linear_infinite] bg-[var(--primary)] opacity-60
-            ${hovered ? "[animation-play-state:running]" : "[animation-play-state:paused]"} `}
+            className="absolute -left-0 top-1/2 h-[calc(100%+1rem)] w-2 animate-[moveStripesReverse_2s_linear_infinite] bg-[var(--primary)] opacity-60 "
             style={striped}
           ></div>
 

@@ -29,7 +29,7 @@ function ToolButton({ tool }) {
   }
 
   return (
-    <div className="w-[7.5rem] flex flex-col items-center justify-center space-y-1">
+    <div className="w-[7.7rem] my-2 flex flex-col items-center justify-center space-y-1">
       {logo}
       <span
         className="text-lg [transform:skewX(-40deg)] font-bold bg-baseClr rounded-full px-2 tracking-widest"
