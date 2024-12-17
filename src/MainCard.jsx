@@ -20,13 +20,15 @@ function MainCard({}) {
       startAnimation="animate-[startCard_0.5s_ease-in-out]"
       hovered={hovered}
     >
-      <div className="flex h-44 w-[40em] items-center justify-center space-x-16">
-        <div className="absolute left-0 top-0 m-10">
+      <div className="flex h-44 w-[40em] items-center justify-center md:h-full md:w-[80vw] md:flex-col">
+        <div className="absolute left-0 top-0 m-10 md:mx-28">
           <HeadShot hovered={hovered} />
         </div>
-        <div className={`flex flex-col justify-center space-y-2`}>
+        <div
+          className={`ml-16 flex flex-col justify-center space-y-2 md:mb-20 md:ml-0 md:mt-5`}
+        >
           <h1
-            className={`relative -left-1 text-5xl tracking-wide ${angleToggled ? "font-play" : "font-poppins"}`}
+            className={`relative -left-1 text-5xl tracking-wide md:mt-44 ${angleToggled ? "font-play" : "font-poppins"}`}
           >
             Sahaj Bhatt
           </h1>
@@ -43,7 +45,7 @@ function MainCard({}) {
             {" Delhi, India"}
           </h2>
         </div>
-        <div className="absolute right-5 top-4 flex flex-col space-y-2">
+        <div className="absolute right-5 top-4 flex flex-col space-y-2 md:bottom-4 md:right-auto md:top-auto md:flex-row md:space-x-2 md:space-y-0">
           <Socials
             iconClass="nf-fa-github"
             accent="text"

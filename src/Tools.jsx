@@ -10,7 +10,7 @@ function Tools() {
   };
   return (
     <div
-      className="group mt-16 w-[60vw] relative"
+      className="group relative mt-16 w-[60vw] md:w-full"
       style={{
         maskImage:
           "linear-gradient(to right, transparent, black 20%, black 80%, transparent)",
@@ -18,13 +18,13 @@ function Tools() {
           "linear-gradient(to right, transparent, black 20%, black 80%, transparent)",
       }}
     >
-      <div className="flex overflow-hidden relative top-8">
+      <div className="relative top-8 flex overflow-hidden">
         <div className="flex animate-[marquee_26.5s_linear_infinite] group-hover:[animation-play-state:paused]">
           {tools.map((tool, index) => {
             return <ToolButton key={index} tool={tool} />;
           })}
           <div
-            className={`absolute bottom-0 w-full h-10 -z-10 bg-[var(--primary)] opacity-70`}
+            className={`absolute bottom-0 -z-10 h-10 w-full bg-[var(--primary)] opacity-70`}
             style={striped}
           ></div>
         </div>
@@ -33,7 +33,7 @@ function Tools() {
             return <ToolButton key={index} tool={tool} />;
           })}
           <div
-            className={`absolute bottom-0 w-full h-10 -z-10 bg-[var(--primary)] opacity-70`}
+            className={`absolute bottom-0 -z-10 h-10 w-full bg-[var(--primary)] opacity-70`}
             style={striped}
           ></div>
         </div>

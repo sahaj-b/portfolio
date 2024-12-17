@@ -1,4 +1,3 @@
-import { useState } from "react";
 import StripedBox from "./StripedBox";
 
 function Education() {
@@ -26,31 +25,45 @@ function Education() {
       <div className="flex flex-col space-y-8">
         <div className="relative flex items-center space-x-3">
           {/* circle */}
-          <div className="z-10 size-8 rounded-full bg-[var(--primary)]"></div>
+          <div className="absolute z-10 size-8 rounded-full bg-[var(--primary)]"></div>
+          <div className="size-8"></div>
+
           {/* line */}
           <div
-            className="absolute -left-0 top-1/2 h-[calc(100%+1rem)] w-2 animate-[moveStripesReverse_2s_linear_infinite] bg-[var(--primary)] opacity-60 "
+            className="absolute left-0 top-1/2 h-[calc(100%+1rem)] w-2 animate-[moveStripesReverse_2s_linear_infinite] bg-[var(--primary)] opacity-60"
             style={striped}
           ></div>
 
           <div className="rounded-xl bg-surface0 p-4">
-            <p className="text-2xl font-bold text-[var(--primary)]">
+            <p className="text-2xl font-bold text-[var(--primary)] md:text-xl">
               {data[0].heading}
             </p>
-            <p className="mt-1 text-xl text-subtext1">{data[0].desc}</p>
-            <p className="mt-3 text-xl text-subtext0">{data[0].duration}</p>
+            <p className="md:text-md mt-1 text-xl text-subtext1">
+              {data[0].desc}
+            </p>
+            <p className="md:text-md mt-3 text-xl text-subtext0">
+              {data[0].duration}
+            </p>
           </div>
         </div>
 
         <div className="relative flex items-center space-x-3">
           {/* circle */}
-          <div className="z-10 size-8 rounded-full bg-[var(--primary)] opacity-60"></div>
+          <div className="absolute z-10 size-8 rounded-full bg-[var(--primary)] opacity-60 md:opacity-100"></div>
+          <div className="size-8"></div>
+
+          <div className="absolute left-0 top-[calc(50%+1rem)] z-10 h-1/2 w-2 animate-[moveStripesReverse_2s_linear_infinite] bg-baseClr"></div>
+
           <div className="rounded-xl bg-surface0 p-4">
-            <p className="text-2xl font-bold text-[var(--primary)]">
+            <p className="text-2xl font-bold text-[var(--primary)] md:text-xl">
               {data[1].heading}
             </p>
-            <p className="mt-1 text-xl text-subtext1">{data[1].desc}</p>
-            <p className="mt-3 text-xl text-subtext0">{data[1].duration}</p>
+            <p className="md:text-md mt-1 text-xl text-subtext1">
+              {data[1].desc}
+            </p>
+            <p className="md:text-md mt-3 text-xl text-subtext0">
+              {data[1].duration}
+            </p>
           </div>
         </div>
       </div>

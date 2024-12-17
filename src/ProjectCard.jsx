@@ -1,6 +1,6 @@
 import { useContext, useMemo } from "react";
 import { AngleToggledContext } from "./context/angleToggledContext";
-function ProjectCard({ project, setHoveredProjectSkills, parentHovered }) {
+function ProjectCard({ project, setHoveredProjectSkills }) {
   const blurStyle = useMemo(() => {
     const color = getComputedStyle(root).getPropertyValue("--" + project.color);
     return {
@@ -10,14 +10,16 @@ function ProjectCard({ project, setHoveredProjectSkills, parentHovered }) {
   }, [project.color]);
 
   const angleToggled = useContext(AngleToggledContext).angleToggled;
-  let striped = {
-    backgroundImage: `repeating-linear-gradient(-45deg, var(--secondary), var(--secondary) 10px, var(--${project.color}) 10px, var(--${project.color}) 20px)`,
-    border: `1px solid var(--${project.color})`,
-    backgroundAttachment: "scroll",
-  };
+  let striped = useMemo(() => {
+    return {
+      backgroundImage: `repeating-linear-gradient(-45deg, var(--secondary), var(--secondary) 10px, var(--${project.color}) 10px, var(--${project.color}) 20px)`,
+      border: `1px solid var(--${project.color})`,
+      backgroundAttachment: "scroll",
+    };
+  }, [project.color]);
   return (
     <div
-      className={`w-[calc(50%-20px)] rounded-xl border shadow-[inset_0_0_1px_1px_rgba(0,0,0,0.5)]`}
+      className={`w-[calc(50%-20px)] rounded-xl border shadow-[inset_0_0_1px_1px_rgba(0,0,0,0.5)] md:w-full`}
       style={striped}
     >
       <div
@@ -29,10 +31,10 @@ function ProjectCard({ project, setHoveredProjectSkills, parentHovered }) {
         <img
           src={project.image}
           alt={project.name}
-          className="profile relative rounded-xl object-cover h-52 w-96"
+          className="profile relative h-52 w-96 rounded-xl object-cover"
         />
 
-        <div className="absolute -bottom-full left-0 transition-all group-hover:bottom-0 w-full text-crust h-full">
+        <div className="absolute -bottom-full left-0 h-full w-full text-crust transition-all group-hover:bottom-0">
           <div className="mx-3 my-3 flex space-x-2">
             <a
               href={project.github}
@@ -50,9 +52,9 @@ function ProjectCard({ project, setHoveredProjectSkills, parentHovered }) {
             )}
           </div>
 
-          <div className="rounded-t-xl p-3 h-full" style={blurStyle}>
+          <div className="h-full rounded-t-xl p-3" style={blurStyle}>
             <p className="font-poppins text-xl font-bold">{project.name}</p>
-            <p className="text-lg mt-2 font-bold leading-5">
+            <p className="mt-2 text-lg font-bold leading-5">
               {project.description}
             </p>
           </div>

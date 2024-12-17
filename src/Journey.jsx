@@ -11,7 +11,7 @@ function Journey() {
       <div className="flex text-center text-3xl font-bold">
         <div
           onClick={() => setSwitched(false)}
-          className={`${switched ? "cursor-pointer" : ""} ${angleToggled ? "" : "z-10 "}`}
+          className={`${switched ? "cursor-pointer" : ""} ${angleToggled ? "" : "z-10"}`}
         >
           <StripedBox
             bgColor={switched ? "bg-baseClr" : "bg-[var(--primary)]"}

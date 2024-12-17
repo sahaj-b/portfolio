@@ -31,7 +31,7 @@ function SkillButton({ skill, parentHovered }) {
     >
       <svg
         viewBox="0 0 200 50"
-        className={`absolute -left-4 -top-[4.5rem] size-24 fill-text text-4xl transition-all ${parentHovered ? "scale-100" : "-top-full scale-0"}`}
+        className={`absolute -left-4 -top-[4.5rem] size-24 fill-text text-4xl transition-all md:-left-2 md:-top-[3.2rem] md:size-16 ${parentHovered ? "scale-100" : "-top-full scale-0"}`}
       >
         <path
           id="semiCirclePath"
@@ -53,10 +53,10 @@ function SkillButton({ skill, parentHovered }) {
         className={`${
           parentHovered
             ? angleToggled
-              ? "-left-1 top-1.5"
-              : "-top-1.5 left-1.5"
+              ? "-left-1 top-1.5 md:-left-0.5 md:top-1"
+              : "-top-1.5 left-1.5 md:-top-1 md:left-1"
             : "left-0 top-0"
-        } relative size-14 rounded-full bg-baseClr p-3 text-center transition-all duration-100 active:left-0 active:top-0`}
+        } relative size-14 overflow-hidden rounded-full bg-baseClr p-3 text-center transition-all duration-100 md:size-9 md:p-0.5`}
       >
         {icon}
       </div>

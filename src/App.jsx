@@ -9,7 +9,7 @@ import Footer from "./Footer";
 const App = () => {
   return (
     <>
-      <div className="font-popins mt-10 flex min-h-screen flex-col items-center justify-center space-y-28 pt-10 pb-20 text-text">
+      <div className="font-popins flex flex-col items-center justify-center space-y-28 px-3 pb-20 pt-10 text-text md:bg-mantle">
         <DotsBackground />
         <AngleToggledProvider>
           <MainCard />

@@ -13,12 +13,19 @@ function HeadShot({ hovered }) {
   };
   let imgEle = "";
   if (angleToggled)
-    imgEle = <img src={pfpImg} className="rounded-full object-cover" />;
+    imgEle = (
+      <img
+        src={pfpImg}
+        alt="Profile Picture"
+        className="rounded-full object-cover"
+      />
+    );
   else
     imgEle = (
       <img
         src={headImg}
-        className="relative -top-9 -left-1 size-56 rounded-full object-cover"
+        className="relative -left-1 -top-9 size-56 rounded-full object-cover"
+        alt="Profile Picture"
       />
     );
   return (

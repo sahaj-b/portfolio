@@ -105,7 +105,7 @@ function DotsBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed left-0 top-0 -z-10 h-full w-full bg-mantle"
+      className="fixed left-0 top-0 -z-10 h-full w-full bg-mantle md:hidden"
     ></canvas>
   );
 }

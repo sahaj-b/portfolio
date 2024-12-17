@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="text-sm text-subtext1 bg-crust w-[99.4vw] p-5 flex justify-around">
+    <div className="flex w-full justify-around bg-crust p-5 text-sm text-subtext1 md:text-xs">
       <span className="">
         Colorscheme:{" "}
         <a
