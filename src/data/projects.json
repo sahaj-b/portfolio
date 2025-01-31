@@ -13,7 +13,7 @@
       "name": "Super Tic Tac Toe",
       "description": "Super/Ultimate/Multidimensional Tic Tac Toe game with dynamic highlighting of playable areas",
       "github": "https://github.com/sahaj-b/super-tic-tac-toe",
-      "demo": "https://sahaj-b.github.io/super-tic-tac-toe/superTTT.HTML5",
+      "demo": "https://sahaj-b.github.io/super-tic-tac-toe/superTTT.html",
       "image": "./superttt.jpg",
       "skills": ["HTML5", "CSS", "JavaScript"],
       "color": "blue"
