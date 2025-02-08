@@ -47,6 +47,14 @@
       "color": "yellow"
     },
     {
+      "name": "Scrntime",
+      "description": "A CLI that displays daily screentime for linux with afk/idle time support",
+      "github": "https://github.com/sahaj-b/wayvibes",
+      "image": "./scrntime.png",
+      "skills": ["Python"],
+      "color": "blue"
+    },
+    {
       "name": "Terminal Dino Run",
       "description": "Simple Dino Run game which runs on a terminal",
       "github": "https://github.com/sahaj-b/dino-run-terminal",
