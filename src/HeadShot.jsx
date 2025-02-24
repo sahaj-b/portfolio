@@ -24,7 +24,7 @@ function HeadShot({ hovered }) {
     imgEle = (
       <img
         src={headImg}
-        className="relative -left-1 -top-9 size-56 rounded-full object-cover"
+        className="relative left-1 -top-2 size-44 rounded-full object-cover"
         alt="Profile Picture"
       />
     );
