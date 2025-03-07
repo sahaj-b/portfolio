@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AngleToggledContext } from "./context/angleToggledContext";
-import headImg from "./assets/headshot.jpg";
-import pfpImg from "./assets/pfp.png";
+import headImg from "./assets/headshot.webp";
+import pfpImg from "./assets/pfp.webp";
 function HeadShot({ hovered }) {
   const { angleToggled, setAngleToggled } = useContext(AngleToggledContext);
   let striped = {

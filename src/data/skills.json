@@ -6,7 +6,7 @@
     {"name":"Tailwind", "icon":"nf-md-tailwind", "color":"blue"},
     {"name":"MySQL", "icon":"nf-dev-mysql", "color":"blue"},
     {"name":"Python", "iconImg":"./python.svg", "color":"yellow"},
-    {"name":"Pygame", "iconImg":"./pygame.png", "color":"yellow"},
+    {"name":"Pygame", "iconImg":"./pygame.webp", "color":"yellow"},
     {"name":"C++", "icon":"nf-custom-cpp", "color":"blue"},
     {"name":"C", "icon":"nf-custom-c", "color":"blue"},
     {"name":"Bash", "icon":"nf-dev-bash", "color":"text"}
