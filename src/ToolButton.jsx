@@ -1,14 +1,17 @@
+import { Icon } from "@iconify/react";
+
 function ToolButton({ tool }) {
   let logo = "";
   if (tool.icon) {
     logo = (
-      <div
-        className={`nf rounded-full bg-baseClr p-3 text-5xl shadow-md shadow-black md:py-2 md:text-3xl ${tool.icon}`}
+      <Icon
+        icon={tool.icon}
+        className={`rounded-full bg-baseClr p-2 text-7xl shadow-md shadow-black md:py-2 md:text-3xl`}
         style={{
           border: `2px solid var(--${tool.accent})`,
           color: `var(--${tool.accent})`,
         }}
-      ></div>
+      ></Icon>
     );
   } else {
     logo = (

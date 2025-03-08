@@ -1,3 +1,5 @@
+import { Icon } from "@iconify/react";
+
 function Footer() {
   return (
     <div className="flex w-full justify-around bg-crust p-5 text-sm text-subtext1 md:text-xs">
@@ -17,7 +19,12 @@ function Footer() {
         />
       </span>
       <span className="">
-        Made with <span className="nf nf-fa-heart text-red"></span> using{" "}
+        Made with{" "}
+        <Icon
+          icon="mdi:heart"
+          className="inline relative -top-[0.08rem] text-red"
+        />{" "}
+        using{" "}
         <a
           href="https://react.dev"
           target="_blank"

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AngleToggledContext } from "./context/angleToggledContext";
+import { Icon } from "@iconify/react";
 function SkillButton({ skill, parentHovered }) {
   const angleToggled = useContext(AngleToggledContext).angleToggled;
   let striped = {
@@ -9,17 +10,17 @@ function SkillButton({ skill, parentHovered }) {
   let icon = "";
   if (skill.icon) {
     icon = (
-      <span
-        className={`nf ${skill.icon} text-3xl`}
+      <Icon
+        icon={skill.icon}
+        className="text-4xl"
         style={{ color: `var(--${skill.color})` }}
-      ></span>
+      ></Icon>
     );
   } else {
     icon = (
       <img
         src={skill.iconImg}
         alt={skill.name}
-        // className={`nf ${skill.icon} text-3xl`}
         style={{ color: `var(--${skill.color})` }}
       ></img>
     );
@@ -56,7 +57,7 @@ function SkillButton({ skill, parentHovered }) {
               ? "-left-1 top-1.5 md:-left-0.5 md:top-1"
               : "-top-1.5 left-1.5 md:-top-1 md:left-1"
             : "left-0 top-0"
-        } relative size-14 overflow-hidden rounded-full bg-baseClr p-3 text-center transition-all duration-100 md:size-9 md:p-0.5`}
+        } relative size-14 overflow-hidden rounded-full bg-baseClr p-2.5 text-center transition-all duration-100 md:size-9 md:p-0.5`}
       >
         {icon}
       </div>

@@ -1,13 +1,12 @@
 [
-    {"name":"HTML5", "icon":"nf-dev-html5", "color":"peach" },
-    {"name":"CSS", "icon":"nf-dev-css3", "color":"blue"},
-    {"name":"JavaScript", "icon":"nf-dev-javascript", "color":"yellow"},
-    {"name":"React", "icon":"nf-dev-react", "color":"sapphire"},
-    {"name":"Tailwind", "icon":"nf-md-tailwind", "color":"blue"},
-    {"name":"MySQL", "icon":"nf-dev-mysql", "color":"blue"},
-    {"name":"Python", "iconImg":"./python.svg", "color":"yellow"},
-    {"name":"Pygame", "iconImg":"./pygame.webp", "color":"yellow"},
-    {"name":"C++", "icon":"nf-custom-cpp", "color":"blue"},
-    {"name":"C", "icon":"nf-custom-c", "color":"blue"},
-    {"name":"Bash", "icon":"nf-dev-bash", "color":"text"}
+    {"name":"HTML5", "icon":"flowbite:html-solid", "color":"peach" },
+    {"name":"CSS", "icon":"flowbite:css-solid", "color":"blue"},
+    {"name":"JavaScript", "icon":"lineicons:javascript", "color":"yellow"},
+    {"name":"React", "icon":"flowbite:react-solid", "color":"sapphire"},
+    {"name":"Tailwind", "icon":"flowbite:tailwind-solid", "color":"blue"},
+    {"name":"MySQL", "icon":"lineicons:mysql", "color":"blue"},
+    {"name":"Python", "icon":"devicon:python", "color":"yellow"},
+    {"name":"C++", "icon":"vscode-icons:file-type-cpp3", "color":"blue"},
+    {"name":"C", "icon":"devicon:c", "color":"blue"},
+    {"name":"Bash", "icon":"devicon-plain:bash", "color":"text"}
 ]

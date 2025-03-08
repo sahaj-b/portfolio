@@ -1,5 +1,6 @@
 import { useContext, useMemo } from "react";
 import { AngleToggledContext } from "./context/angleToggledContext";
+import { Icon } from "@iconify/react";
 function ProjectCard({ project, setHoveredProjectSkills }) {
   const blurStyle = useMemo(() => {
     const color = getComputedStyle(root).getPropertyValue("--" + project.color);
@@ -39,16 +40,20 @@ function ProjectCard({ project, setHoveredProjectSkills }) {
             <a
               href={project.github}
               target="_blank"
-              className={`nf nf-fa-github rounded-full px-2 py-1 text-3xl transition-all hover:opacity-80`}
+              className="rounded-full p-1 text-3xl transition-all hover:opacity-80"
               style={blurStyle}
-            ></a>
+            >
+              <Icon icon="mdi:github" />
+            </a>
             {project.demo && (
               <a
                 href={project.demo}
                 target="_blank"
-                className={`nf nf-fa-external_link rounded-full px-3 py-2 text-center text-xl transition-all hover:opacity-80`}
+                className="rounded-full p-1 text-3xl transition-all hover:opacity-80"
                 style={blurStyle}
-              ></a>
+              >
+                <Icon icon="heroicons-solid:external-link" />
+              </a>
             )}
           </div>
 

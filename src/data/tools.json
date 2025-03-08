@@ -1,14 +1,13 @@
 [
-  {"name": "Neovim", "icon": "nf-custom-neovim", "accent": "green"},
-  {"name": "Arch BTW", "icon": "nf-md-arch", "accent": "blue"},
-  {"name": "Git", "icon": "nf-dev-git", "accent": "red"},
-  {"name": "Tmux", "icon": "nf-cod-terminal_tmux", "accent": "green"},
-  {"name": "Hyprland", "icon": "nf-linux-hyprland", "accent": "sapphire"},
-  {"name": "Figma", "icon": "nf-fa-figma", "accent": "maroon"},
-  {"name": "Obsidian", "iconImg": "./obsidian.webp", "accent": "mauve"},
+  {"name": "Neovim", "icon": "devicon:neovim", "accent": "green"},
+  {"name": "Arch BTW", "icon": "mdi:arch", "accent": "blue"},
+  {"name": "Git", "icon": "fe:git", "accent": "red"},
+  {"name": "Tmux", "icon": "vscode-icons:file-type-tmux", "accent": "green"},
+  {"name": "Hyprland", "icon": "simple-icons:hyprland", "accent": "sapphire"},
+  {"name": "Figma", "icon": "devicon:figma", "accent": "maroon"},
+  {"name": "Obsidian", "icon": "simple-icons:obsidian", "accent": "mauve"},
   {"name": "Wakapi", "iconImg": "./wakapi.png", "accent": "green"},
-  {"name": "ZSH", "iconImg": "./zsh.svg", "accent": "text"},
-  {"name": "Prettier", "icon": "nf-custom-prettier", "accent": "red"},
-  {"name": "MonkeyType", "iconImg": "./monkeytype.svg", "accent": "yellow"}
-
+  {"name": "ZSH", "icon": "simple-icons:zsh", "accent": "text"},
+  {"name": "Prettier", "icon": "vscode-icons:file-type-prettier", "accent": "red"},
+  {"name": "MonkeyType", "icon": "simple-icons:monkeytype", "accent": "yellow"}
 ]

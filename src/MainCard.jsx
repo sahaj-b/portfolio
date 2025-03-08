@@ -3,6 +3,7 @@ import HeadShot from "./HeadShot.jsx";
 import Socials from "./Socials.jsx";
 import StripedBox from "./StripedBox.jsx";
 import { AngleToggledContext } from "./context/angleToggledContext";
+import { Icon } from "@iconify/react";
 
 function MainCard({}) {
   const angleToggled = useContext(AngleToggledContext).angleToggled;
@@ -41,31 +42,34 @@ function MainCard({}) {
             </span>
           </h2>
           <h2 className="pt-2 font-poppins text-xl font-light text-subtext0">
-            <span className="nf nf-oct-location relative -top-0.5 text-sm"></span>
+            <Icon
+              icon="fluent:location-16-regular"
+              className="inline relative text-md -top-0.5"
+            />
             {" Delhi, India"}
           </h2>
         </div>
-        <div className="absolute right-5 top-4 flex flex-col space-y-2 md:bottom-4 md:right-auto md:top-auto md:flex-row md:space-x-2 md:space-y-0">
+        <div className="absolute right-5 top-3 flex flex-col space-y-2 md:bottom-4 md:right-auto md:top-auto md:flex-row md:space-x-2 md:space-y-0">
           <Socials
-            iconClass="nf-fa-github"
+            iconClass="mdi:github"
             accent="text"
             parentHovered={hovered}
             link="https://github.com/sahaj-b"
           />
           <Socials
-            iconClass="nf-fa-linkedin"
+            iconClass="mdi:linkedin"
             accent="blue"
             parentHovered={hovered}
             link="https://www.linkedin.com/in/sahaj-bhatt-9b8b381b0/"
           />
           <Socials
-            iconClass="nf-dev-twitter"
+            iconClass="ri:twitter-x-fill"
             accent="text"
             parentHovered={hovered}
             link="https://x.com/sahajb0606?t=kyDZxXb5766osaZvX7guEw&s=08"
           />
           <Socials
-            iconClass="nf-fa-discord"
+            iconClass="mdi:discord"
             accent="lavender"
             parentHovered={hovered}
             copyText="sens3459"
