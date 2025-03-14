@@ -22,7 +22,7 @@ function MainCard({}) {
       hovered={hovered}
     >
       <div className="flex h-44 w-[40em] items-center justify-center md:h-full md:w-[80vw] md:flex-col">
-        <div className="absolute left-0 top-0 m-10 md:mx-28">
+        <div className="absolute left-0 top-0 m-10 md:left-1/2 md:-translate-x-16 md:mx-0">
           <HeadShot hovered={hovered} />
         </div>
         <div
