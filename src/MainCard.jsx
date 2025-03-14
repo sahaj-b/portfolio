@@ -36,10 +36,11 @@ function MainCard({}) {
           <h2
             className={`font-poppins text-2xl text-subtext1 ${angleToggled ? "pt-3" : ""}`}
           >
-            {angleToggled ? "FullStack Dev" : "Frontend Dev"}
-            <span className={`font-play`}>
-              {angleToggled ? " soon!" : ", for now"}
-            </span>
+            Fullstack Web Developer
+            {/* {angleToggled ? "FullStack Dev" : "Frontend Dev"} */}
+            {/* <span className={`font-play`}> */}
+            {/*   {angleToggled ? " soon!" : ", for now"} */}
+            {/* </span> */}
           </h2>
           <h2 className="pt-2 font-poppins text-xl font-light text-subtext0">
             <Icon
