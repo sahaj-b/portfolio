@@ -12,7 +12,7 @@ function SkillButton({ skill, parentHovered }) {
     icon = (
       <Icon
         icon={skill.icon}
-        className="text-4xl"
+        className="text-4xl md:text-3xl"
         style={{ color: `var(--${skill.color})` }}
       ></Icon>
     );
@@ -57,7 +57,7 @@ function SkillButton({ skill, parentHovered }) {
               ? "-left-1 top-1.5 md:-left-0.5 md:top-1"
               : "-top-1.5 left-1.5 md:-top-1 md:left-1"
             : "left-0 top-0"
-        } relative size-14 overflow-hidden rounded-full bg-baseClr p-2.5 text-center transition-all duration-150 md:size-9 md:p-0.5`}
+        } flex justify-center items-center relative size-14 overflow-hidden rounded-full bg-baseClr p-2.5 text-center transition-all duration-150 md:size-9 md:p-0.5`}
       >
         {icon}
       </div>
