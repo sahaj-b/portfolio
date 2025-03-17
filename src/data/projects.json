@@ -7,7 +7,7 @@
       "demo": "https://whosentthis.vercel.app/",
       "image": "./who-sent-this.webp",
       "skills": ["HTML5", "CSS", "TypeScript", "React", "Tailwind", "MongoDB", "Express", "NodeJS"],
-      "color": "mauve"
+      "color": "red"
     },
     {
       "name": "Claude AI Frontend Clone",
@@ -16,7 +16,7 @@
       "demo": "https://sahaj-claude-clone.vercel.app/",
       "image": "./claude.webp",
       "skills": ["HTML5", "CSS", "JavaScript", "React", "Tailwind"],
-      "color": "red"
+      "color": "maroon"
     },
     {
       "name": "Super Tic Tac Toe",
