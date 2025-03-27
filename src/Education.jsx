@@ -11,17 +11,17 @@ function Education() {
   let data = [
     {
       heading: "Bachelor of Technology (Information Technology)",
-      desc: "University School of Information and Technology, GGSIPU, Dwarka",
+      desc: "University School of Information, Communication and Technology (GGSIPU), Delhi",
       duration: "2024-2028",
     },
     {
       heading: "Senior Secondary (10+2)",
-      desc: "Jagdish Bal Mandir Public School, New Delhi",
+      desc: "Bal Mandir Sr. Sec. School, New Delhi",
       duration: "2012-2024",
     },
   ];
   return (
-    <StripedBox padClass="p-10 group">
+    <StripedBox padClass="p-16 group">
       <div className="flex flex-col space-y-8">
         <div className="relative flex items-center space-x-3">
           {/* circle */}
@@ -30,11 +30,11 @@ function Education() {
 
           {/* line */}
           <div
-            className="absolute left-0 top-1/2 h-[calc(100%+1rem)] w-2 animate-[moveStripesReverse_2s_linear_infinite] bg-[var(--primary)] opacity-60"
+            className="absolute left-0 top-1/2 h-[calc(100%+3px)] w-2 animate-[moveStripesReverse_2s_linear_infinite] bg-[var(--primary)] opacity-60"
             style={striped}
           ></div>
 
-          <div className="rounded-xl bg-surface0 p-4">
+          <div className="rounded-xl bg-surface0 py-4 px-6 text-wrap max-w-2xl">
             <p className="text-2xl font-bold text-[var(--primary)] md:text-xl">
               {data[0].heading}
             </p>
@@ -54,7 +54,7 @@ function Education() {
 
           <div className="absolute left-0 top-[calc(50%+1rem)] z-10 h-1/2 w-2 animate-[moveStripesReverse_2s_linear_infinite] bg-baseClr"></div>
 
-          <div className="rounded-xl bg-surface0 p-4">
+          <div className="rounded-xl bg-surface0 py-4 px-6">
             <p className="text-2xl font-bold text-[var(--primary)] md:text-xl">
               {data[1].heading}
             </p>
