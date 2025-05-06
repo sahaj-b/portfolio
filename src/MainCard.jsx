@@ -67,7 +67,7 @@ function MainCard({}) {
             iconClass="ri:twitter-x-fill"
             accent="text"
             parentHovered={hovered}
-            link="https://x.com/sahajb0606?t=kyDZxXb5766osaZvX7guEw&s=08"
+            link="https://x.com/sahaj__b"
           />
           <Socials
             iconClass="mdi:discord"
