@@ -1,12 +1,21 @@
 {
-  "WebDev":[
+  "WebDev": [
     {
       "name": "Who Sent This?",
       "description": "A web app to send, receive and reply anonymous messages",
       "github": "https://github.com/sahaj-b/who-sent-this",
       "demo": "https://whosentthis.vercel.app/",
       "image": "./who-sent-this.webp",
-      "skills": ["HTML5", "CSS", "TypeScript", "React", "Tailwind", "MongoDB", "Express", "NodeJS"],
+      "skills": [
+        "HTML5",
+        "CSS",
+        "TypeScript",
+        "React",
+        "Tailwind",
+        "MongoDB",
+        "Express",
+        "NodeJS"
+      ],
       "color": "red"
     },
     {
@@ -37,8 +46,7 @@
       "color": "mauve"
     }
   ],
-  "other":[
-    
+  "other": [
     {
       "name": "Flappy Bird Ninja",
       "description": "Flappy Bird, but it can shoot shurikens to kill bad birds",
@@ -46,6 +54,14 @@
       "image": "./flappy.webp",
       "skills": ["Python", "Pygame"],
       "color": "sky"
+    },
+    {
+      "name": "Go-Attend",
+      "description": "StdLib-only Attendance Tracker TUI from scratch in Go",
+      "github": "https://github.com/sahaj-b/go-attend",
+      "image": "./go-attend.webp",
+      "skills": ["Golang"],
+      "color": "yellow"
     },
     {
       "name": "Wayvibes",
@@ -95,6 +111,5 @@
       "skills": ["Python"],
       "color": "text"
     }
-
   ]
 }
