@@ -1,25 +1,5 @@
 [
   {
-    "name": "HTML5",
-    "icon": "flowbite:html-solid",
-    "color": "peach"
-  },
-  {
-    "name": "CSS",
-    "icon": "flowbite:css-solid",
-    "color": "blue"
-  },
-  {
-    "name": "JavaScript",
-    "icon": "lineicons:javascript",
-    "color": "yellow"
-  },
-  {
-    "name": "TypeScript",
-    "icon": "lineicons:typescript",
-    "color": "blue"
-  },
-  {
     "name": "React",
     "icon": "flowbite:react-solid",
     "color": "sapphire"
@@ -30,9 +10,24 @@
     "color": "blue"
   },
   {
-    "name": "NodeJS",
+    "name": "NextJS",
+    "icon": "material-icon-theme:next",
+    "color": "text"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "lineicons:javascript",
+    "color": "yellow"
+  },
+  {
+    "name": "Node",
     "icon": "la:node-js",
     "color": "green"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "lineicons:typescript",
+    "color": "blue"
   },
   {
     "name": "Express",

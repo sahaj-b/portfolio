@@ -37,7 +37,9 @@ export default function ToolButton({ tool }: ToolButtonProps) {
         }}
       >
         <Image
-          className={`size-20 md:size-auto md:pt-3 ${tool.name === 'Wakapi' ? 'p-2' : 'p-3'} pt-2`}
+          className={`size-20 md:size-auto md:pt-3 pt-2 ${tool.name === 'Wakapi' ? 'px-3 pb-5 pt-3' : 'p-3'}`}
+          width={100}
+          height={100}
           src={tool.iconImg}
           alt={tool.name}
         />
