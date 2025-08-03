@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'A developer building fullstack apps, terminal tools, and other cool stuff',
     images: [
       {
-        url: 'https://sahaj.dev/og-banner.png',
+        url: 'https://sahaj.dev/og-banner.webp',
         width: 1200,
         height: 630,
       },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     site: 'https://sahaj.dev',
     title: "Sahaj's Portfolio",
     description: 'A developer building fullstack apps, terminal tools, and other cool stuff',
-    images: ['https://sahaj.dev/og-banner.png'],
+    images: ['https://sahaj.dev/og-banner.webp'],
   },
   robots: 'index, follow',
 }
