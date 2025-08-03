@@ -1,20 +1,25 @@
-import { useState, useContext, useEffect } from "react";
-import HeadShot from "./HeadShot.jsx";
-import Socials from "./Socials.jsx";
-import StripedBox from "./StripedBox.jsx";
-import { AngleToggledContext } from "./context/angleToggledContext";
-import { Icon } from "@iconify/react";
+'use client'
 
-function MainCard({}) {
-  const angleToggled = useContext(AngleToggledContext).angleToggled;
+import { useState, useEffect } from 'react'
+import HeadShot from './HeadShot'
+import Socials from './Socials'
+import StripedBox from './StripedBox'
+import { useAngleToggled } from '@/context/angleToggledContext'
+import { Icon } from '@iconify/react'
+
+export default function MainCard() {
+  const { angleToggled } = useAngleToggled()
+
   useEffect(() => {
     if (angleToggled) {
-      document.documentElement.style.setProperty("--primary", "var(--blue)");
+      document.documentElement.style.setProperty('--primary', 'var(--blue)')
     } else {
-      document.documentElement.style.setProperty("--primary", "var(--mauve)");
+      document.documentElement.style.setProperty('--primary', 'var(--mauve)')
     }
-  }, [angleToggled]);
-  const [hovered, setHovered] = useState(false);
+  }, [angleToggled])
+
+  const [hovered, setHovered] = useState(false)
+
   return (
     <StripedBox
       setHovered={setHovered}
@@ -25,29 +30,20 @@ function MainCard({}) {
         <div className="absolute left-0 top-0 m-10 md:left-1/2 md:-translate-x-16 md:mx-0">
           <HeadShot hovered={hovered} />
         </div>
-        <div
-          className={`ml-16 flex flex-col justify-center space-y-2 md:mb-20 md:ml-0 md:mt-5`}
-        >
+        <div className="ml-16 flex flex-col justify-center space-y-2 md:mb-20 md:ml-0 md:mt-5">
           <h1
-            className={`relative -left-1 text-5xl tracking-wide md:mt-44 ${angleToggled ? "font-play" : "font-poppins"}`}
+            className={`relative -left-1 text-5xl tracking-wide md:mt-44 ${
+              angleToggled ? 'font-play' : 'font-poppins'
+            }`}
           >
             Sahaj Bhatt
           </h1>
-          <h2
-            className={`font-poppins text-2xl text-subtext1 ${angleToggled ? "pt-3" : ""}`}
-          >
+          <h2 className={`font-poppins text-2xl text-subtext1 ${angleToggled ? 'pt-3' : ''}`}>
             Fullstack Web Developer
-            {/* {angleToggled ? "FullStack Dev" : "Frontend Dev"} */}
-            {/* <span className={`font-play`}> */}
-            {/*   {angleToggled ? " soon!" : ", for now"} */}
-            {/* </span> */}
           </h2>
           <h2 className="pt-2 font-poppins text-xl font-light text-subtext0">
-            <Icon
-              icon="fluent:location-16-regular"
-              className="inline relative text-md -top-0.5"
-            />
-            {" Delhi, India"}
+            <Icon icon="fluent:location-16-regular" className="inline relative text-md -top-0.5" />
+            {' Delhi, India'}
           </h2>
         </div>
         <div className="absolute right-5 top-3 flex flex-col space-y-2 md:bottom-4 md:right-auto md:top-auto md:flex-row md:space-x-2 md:space-y-0">
@@ -78,6 +74,5 @@ function MainCard({}) {
         </div>
       </div>
     </StripedBox>
-  );
+  )
 }
-export default MainCard;
