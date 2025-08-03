@@ -1,4 +1,6 @@
 .prettierrc
+.next/
+out/
 # Logs
 logs
 *.log

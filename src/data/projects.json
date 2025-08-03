@@ -6,16 +6,7 @@
       "github": "https://github.com/sahaj-b/who-sent-this",
       "demo": "https://whosentthis.vercel.app/",
       "image": "./who-sent-this.webp",
-      "skills": [
-        "HTML5",
-        "CSS",
-        "TypeScript",
-        "React",
-        "Tailwind",
-        "MongoDB",
-        "Express",
-        "NodeJS"
-      ],
+      "skills": ["HTML5", "CSS", "TypeScript", "React", "Tailwind", "MongoDB", "Express", "NodeJS"],
       "color": "red"
     },
     {
