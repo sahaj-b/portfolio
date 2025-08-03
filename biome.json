@@ -39,6 +39,11 @@
     },
     "rules": {
       "recommended": true,
+      "a11y": {
+        "useFocusableInteractive": "off",
+        "useSemanticElements": "off",
+        "useKeyWithClickEvents": "off"
+      },
       "style": {
         "useImportType": "error",
         "useExportType": "error"

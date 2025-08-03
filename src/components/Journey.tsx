@@ -1,10 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import StripedBox from './StripedBox'
+import { useAngleToggled } from '@/context/angleToggledContext'
 import Education from './Education'
 import Experience from './Experience'
-import { useAngleToggled } from '@/context/angleToggledContext'
+import StripedBox from './StripedBox'
 
 export default function Journey() {
   const [switched, setSwitched] = useState(false)
@@ -16,6 +16,7 @@ export default function Journey() {
         <div
           onClick={() => setSwitched(false)}
           className={`${switched ? 'cursor-pointer' : ''} ${angleToggled ? '' : 'z-10'}`}
+          role="button"
         >
           <StripedBox
             bgColor={switched ? 'bg-baseClr' : 'bg-[var(--primary)]'}
@@ -28,7 +29,11 @@ export default function Journey() {
             </span>
           </StripedBox>
         </div>
-        <div onClick={() => setSwitched(true)} className={switched ? '' : 'cursor-pointer'}>
+        <div
+          onClick={() => setSwitched(true)}
+          className={switched ? '' : 'cursor-pointer'}
+          role="button"
+        >
           <StripedBox
             bgColor={switched ? 'bg-[var(--primary)]' : 'bg-baseClr'}
             roundClass="rounded-r-full"

@@ -1,6 +1,7 @@
 'use client'
 
 import { Icon } from '@iconify/react'
+import Image from 'next/image'
 
 interface Tool {
   name: string
@@ -14,7 +15,7 @@ interface ToolButtonProps {
 }
 
 export default function ToolButton({ tool }: ToolButtonProps) {
-  let logo
+  let logo: React.ReactNode
   if (tool.icon) {
     logo = (
       <Icon
@@ -26,7 +27,7 @@ export default function ToolButton({ tool }: ToolButtonProps) {
         }}
       />
     )
-  } else {
+  } else if (tool.iconImg) {
     logo = (
       <div
         className="flex justify-center size-[4.8rem] overflow-hidden rounded-full bg-baseClr shadow-md shadow-black md:size-14"
@@ -35,12 +36,24 @@ export default function ToolButton({ tool }: ToolButtonProps) {
           color: `var(--${tool.accent})`,
         }}
       >
-        <img
+        <Image
           className={`size-20 md:size-auto md:pt-3 ${tool.name === 'Wakapi' ? 'p-2' : 'p-3'} pt-2`}
           src={tool.iconImg}
           alt={tool.name}
         />
       </div>
+    )
+  } else {
+    logo = (
+      <span
+        className="rounded-full bg-baseClr p-2 text-7xl shadow-md shadow-black md:py-2 md:text-6xl"
+        style={{
+          color: `var(--${tool.accent})`,
+          border: `2px solid var(--${tool.accent})`,
+        }}
+      >
+        {tool.name[0].toUpperCase()}
+      </span>
     )
   }
 

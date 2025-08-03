@@ -1,8 +1,8 @@
 'use client'
 
+import type { CSSProperties } from 'react'
 import tools from '@/data/tools.json'
 import ToolButton from './ToolButton'
-import type { CSSProperties } from 'react'
 
 export default function Tools() {
   const striped: CSSProperties = {

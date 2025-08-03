@@ -1,7 +1,7 @@
 'use client'
 
-import StripedBox from './StripedBox'
 import type { CSSProperties } from 'react'
+import StripedBox from './StripedBox'
 
 interface EducationData {
   heading: string

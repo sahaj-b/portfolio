@@ -1,10 +1,10 @@
 'use client'
 
-import { useAngleToggled } from '@/context/angleToggledContext'
 import { Icon } from '@iconify/react'
 import type { CSSProperties } from 'react'
+import { useAngleToggled } from '@/context/angleToggledContext'
 
-interface Skill {
+export interface Skill {
   name: string
   color: string
   icon?: string
@@ -64,11 +64,7 @@ export default function SkillButton({ skill, parentHovered }: SkillButtonProps) 
         aria-label={skill.name}
       >
         <title>{skill.name}</title>
-        <path
-          id="semiCirclePath"
-          d="M 10,90 A 120,120 0 0,1 190,90"
-          fill="none"
-        />
+        <path id="semiCirclePath" d="M 10,90 A 120,120 0 0,1 190,90" fill="none" />
         <text>
           <textPath
             href="#semiCirclePath"
@@ -81,11 +77,13 @@ export default function SkillButton({ skill, parentHovered }: SkillButtonProps) 
         </text>
       </svg>
       <div
-        className={`${parentHovered
-          ? angleToggled
-            ? '-left-1 top-1 md:-left-1 md:top-1'
-            : '-top-1 left-1 md:-top-1 md:left-1'
-          : 'left-0 top-0'} flex justify-center items-center relative size-14 overflow-hidden rounded-full bg-baseClr p-2.5 text-center transition-all duration-150 md:size-9 md:p-0.5`}
+        className={`${
+          parentHovered
+            ? angleToggled
+              ? '-left-1 top-1 md:-left-1 md:top-1'
+              : '-top-1 left-1 md:-top-1 md:left-1'
+            : 'left-0 top-0'
+        } flex justify-center items-center relative size-14 overflow-hidden rounded-full bg-baseClr p-2.5 text-center transition-all duration-150 md:size-9 md:p-0.5`}
       >
         {icon}
       </div>

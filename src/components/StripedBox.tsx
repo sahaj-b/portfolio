@@ -1,7 +1,7 @@
 'use client'
 
+import type { CSSProperties, ReactNode } from 'react'
 import { useAngleToggled } from '@/context/angleToggledContext'
-import type { ReactNode, CSSProperties } from 'react'
 
 interface StripedBoxProps {
   children: ReactNode
@@ -44,6 +44,7 @@ export default function StripedBox({
       style={striped}
     >
       <div
+        role="region"
         className={`${positionLogic} relative ${roundClass} ${bgColor} ${padClass} shadow shadow-mantle transition-all ${startAnimation}`}
         style={{ border: '1px solid var(--primary)' }}
         onMouseEnter={() => setHovered(true)}

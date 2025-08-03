@@ -28,12 +28,12 @@ export default function Footer() {
         Made with <Icon icon="mdi:heart" className="inline relative -top-[0.08rem] text-red" />{' '}
         using{' '}
         <a
-          href="https://react.dev"
+          href="https://nextjs.org"
           target="_blank"
           rel="noopener noreferrer"
           className="font-bold text-[var(--primary)] hover:opacity-80"
         >
-          React
+          Next.js
         </a>{' '}
         and{' '}
         <a

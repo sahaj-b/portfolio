@@ -1,8 +1,8 @@
 'use client'
 
-import { useAngleToggled } from '@/context/angleToggledContext'
 import { Icon } from '@iconify/react'
 import type { CSSProperties } from 'react'
+import { useAngleToggled } from '@/context/angleToggledContext'
 
 interface SocialsProps {
   link?: string

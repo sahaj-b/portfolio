@@ -1,17 +1,17 @@
 'use client'
 
-import { useAngleToggled } from '@/context/angleToggledContext'
 import { Icon } from '@iconify/react'
 import { useMemo } from 'react'
+import { useAngleToggled } from '@/context/angleToggledContext'
 
-interface Project {
+export type Project = {
   name: string
-  color: string
-  image: string
-  github: string
-  demo?: string
   description: string
-  skills: string[]
+  github?: string
+  demo?: string
+  image?: string
+  skills?: string[]
+  color: string
 }
 
 interface ProjectCardProps {

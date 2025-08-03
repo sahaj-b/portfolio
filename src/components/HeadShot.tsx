@@ -1,10 +1,8 @@
 'use client'
 
-import { useAngleToggled } from '@/context/angleToggledContext'
-import headImg from '@/assets/headshot.webp'
-import pfpImg from '@/assets/pfp.webp'
 import Image from 'next/image'
 import type { CSSProperties } from 'react'
+import { useAngleToggled } from '@/context/angleToggledContext'
 
 interface HeadShotProps {
   hovered: boolean
@@ -24,7 +22,7 @@ export default function HeadShot({ hovered }: HeadShotProps) {
 
   const imgEle = angleToggled ? (
     <Image
-      src={pfpImg}
+      src="/pfp.webp"
       alt="Profile Picture"
       className="rounded-full object-cover"
       fill
@@ -32,7 +30,7 @@ export default function HeadShot({ hovered }: HeadShotProps) {
     />
   ) : (
     <Image
-      src={headImg}
+      src="/headshot.webp"
       className="relative left-1 -top-2 size-44 rounded-full object-cover"
       alt="Profile Picture"
       fill
@@ -45,7 +43,6 @@ export default function HeadShot({ hovered }: HeadShotProps) {
       className="size-36 animate-[moveStripes_2s_linear_infinite] rounded-full bg-text bg-fixed shadow-[inset_0_0_3px_3px_rgba(0,0,0,0.5)]"
       style={striped}
     >
-      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/prefer-button */}
       <div
         className={`relative size-36 animate-[startHead_1s_ease-in-out] cursor-pointer rounded-full border-2 border-[var(--primary)] bg-baseClr shadow shadow-mantle transition-all ${
           angleToggled ? 'hover:-left-1.5 hover:top-1.5' : 'hover:-top-2 hover:left-1.5'

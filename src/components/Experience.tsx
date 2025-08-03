@@ -1,7 +1,7 @@
 'use client'
 
-import StripedBox from './StripedBox'
 import { useAngleToggled } from '@/context/angleToggledContext'
+import StripedBox from './StripedBox'
 
 export default function Experience() {
   const { angleToggled } = useAngleToggled()

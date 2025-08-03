@@ -1,11 +1,11 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { Icon } from '@iconify/react'
+import { useEffect, useState } from 'react'
+import { useAngleToggled } from '@/context/angleToggledContext'
 import HeadShot from './HeadShot'
 import Socials from './Socials'
 import StripedBox from './StripedBox'
-import { useAngleToggled } from '@/context/angleToggledContext'
-import { Icon } from '@iconify/react'
 
 export default function MainCard() {
   const { angleToggled } = useAngleToggled()

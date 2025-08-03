@@ -1,10 +1,10 @@
-import MainCard from '@/components/MainCard'
 import DotsBackground from '@/components/DotsBackground'
-import Showcase from '@/components/Showcase'
-import { AngleToggledProvider } from '@/context/angleToggledContext'
-import Journey from '@/components/Journey'
-import Tools from '@/components/Tools'
 import Footer from '@/components/Footer'
+import Journey from '@/components/Journey'
+import MainCard from '@/components/MainCard'
+import Showcase from '@/components/Showcase'
+import Tools from '@/components/Tools'
+import { AngleToggledProvider } from '@/context/angleToggledContext'
 
 export default function HomePage() {
   return (
