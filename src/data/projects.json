@@ -6,7 +6,16 @@
       "github": "https://github.com/sahaj-b/who-sent-this",
       "demo": "https://whosentthis.vercel.app/",
       "image": "./who-sent-this.webp",
-      "skills": ["HTML5", "CSS", "TypeScript", "React", "Tailwind", "MongoDB", "Express", "NodeJS"],
+      "skills": [
+        "HTML5",
+        "CSS",
+        "TypeScript",
+        "React",
+        "Tailwind",
+        "MongoDB",
+        "Express",
+        "NodeJS"
+      ],
       "color": "red"
     },
     {
@@ -15,7 +24,13 @@
       "github": "https://github.com/sahaj-b/claudeAI-frontend-clone",
       "demo": "https://sahaj-claude-clone.vercel.app/",
       "image": "./claude.webp",
-      "skills": ["HTML5", "CSS", "JavaScript", "React", "Tailwind"],
+      "skills": [
+        "HTML5",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Tailwind"
+      ],
       "color": "maroon"
     },
     {
@@ -24,7 +39,11 @@
       "github": "https://github.com/sahaj-b/super-tic-tac-toe",
       "demo": "https://sahaj-b.github.io/super-tic-tac-toe/superTTT.html",
       "image": "./superttt.webp",
-      "skills": ["HTML5", "CSS", "JavaScript"],
+      "skills": [
+        "HTML5",
+        "CSS",
+        "JavaScript"
+      ],
       "color": "blue"
     },
     {
@@ -33,7 +52,13 @@
       "github": "https://github.com/sahaj-b/portfolio",
       "demo": "https://sahajb.vercel.app",
       "image": "./portfolio.webp",
-      "skills": ["HTML5", "CSS", "JavaScript", "React", "Tailwind"],
+      "skills": [
+        "HTML5",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Tailwind"
+      ],
       "color": "mauve"
     }
   ],
@@ -43,7 +68,10 @@
       "description": "Flappy Bird, but it can shoot shurikens to kill bad birds",
       "github": "https://github.com/sahaj-b/flappy-bird-ninja",
       "image": "./flappy.webp",
-      "skills": ["Python", "Pygame"],
+      "skills": [
+        "Python",
+        "Pygame"
+      ],
       "color": "sky"
     },
     {
@@ -51,7 +79,9 @@
       "description": "StdLib-only Attendance Tracker TUI from scratch in Go",
       "github": "https://github.com/sahaj-b/go-attend",
       "image": "./go-attend.webp",
-      "skills": ["Golang"],
+      "skills": [
+        "Golang"
+      ],
       "color": "yellow"
     },
     {
@@ -59,7 +89,9 @@
       "description": "A Linux(Wayland)-native CLI that plays custom keyboard sounds globally on keypresses (wayland alternative for mechvibes)",
       "github": "https://github.com/sahaj-b/wayvibes",
       "image": "./wayvibes.webp",
-      "skills": ["C++"],
+      "skills": [
+        "C++"
+      ],
       "color": "yellow"
     },
     {
@@ -67,7 +99,9 @@
       "description": "A CLI that displays daily screentime for linux with afk/idle time support",
       "github": "https://github.com/sahaj-b/wayvibes",
       "image": "./scrntime.webp",
-      "skills": ["Python"],
+      "skills": [
+        "Python"
+      ],
       "color": "blue"
     },
     {
@@ -75,7 +109,9 @@
       "description": "Simple Dino Run game which runs on a terminal",
       "github": "https://github.com/sahaj-b/dino-run-terminal",
       "image": "./dino.webp",
-      "skills": ["Python"],
+      "skills": [
+        "Python"
+      ],
       "color": "green"
     },
     {
@@ -83,7 +119,9 @@
       "description": "Retro Snake game for the Linux terminal, with dynamic speed and grid size controls",
       "github": "https://github.com/sahaj-b/snake-terminal",
       "image": "./snake.webp",
-      "skills": ["C++"],
+      "skills": [
+        "C++"
+      ],
       "color": "text"
     },
     {
@@ -91,7 +129,11 @@
       "description": "Lot of Linux scripts for automating my workflow and enhancing productivity",
       "github": "https://github.com/sahaj-b/dotfiles/tree/main/scripts",
       "image": "./scripts.webp",
-      "skills": ["C++", "Bash", "Python"],
+      "skills": [
+        "C++",
+        "Bash",
+        "Python"
+      ],
       "color": "yellow"
     },
     {
@@ -99,7 +141,9 @@
       "description": "Remake of YouAreAnIdiot virus for Windows with Tkinter because I couldn't find any open source version",
       "github": "https://github.com/sahaj-b/YouAreAnIdiot-FakeVirus",
       "image": "./yaai.webp",
-      "skills": ["Python"],
+      "skills": [
+        "Python"
+      ],
       "color": "text"
     }
   ]
