@@ -10,7 +10,7 @@ export type Project = {
   github?: string
   demo?: string
   image?: string
-  skills?: string[]
+  skills: string[]
   color: string
 }
 

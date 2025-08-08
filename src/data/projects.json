@@ -1,6 +1,15 @@
 {
   "WebDev": [
     {
+      "name": "Binge Meter",
+      "description": "Browser extension which tracks your distracting time. Features AI content classifier, live on-screen timer, Analytics, and Site Blocking",
+      "github": "https://github.com/sahaj-b/binge-meter",
+      "demo": "https://chromewebstore.google.com/detail/binge-meter/jlbijnlhiaaophloidngjkdfmdopnagh",
+      "image": "./binge-meter.webp",
+      "skills": ["TypeScript", "React", "Tailwind"],
+      "color": "yellow"
+    },
+    {
       "name": "Who Sent This?",
       "description": "A web app to send, receive and reply anonymous messages",
       "github": "https://github.com/sahaj-b/who-sent-this",
