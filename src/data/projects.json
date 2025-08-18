@@ -56,6 +56,14 @@
       "color": "sky"
     },
     {
+      "name": "Wakafetch",
+      "description": "Terminal dashboard for displaying coding stats from WakaTime/Wakapi. Features multiple views, heatmap, zero-config setup, and more",
+      "github": "https://github.com/sahaj-b/wakafetch",
+      "image": "./wakafetch.webp",
+      "skills": ["Golang"],
+      "color": "green"
+    },
+    {
       "name": "Go-Attend",
       "description": "StdLib-only Attendance Tracker TUI from scratch in Go",
       "github": "https://github.com/sahaj-b/go-attend",
