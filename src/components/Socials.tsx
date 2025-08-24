@@ -5,20 +5,13 @@ import type { CSSProperties } from 'react'
 import { useAngleToggled } from '@/context/angleToggledContext'
 
 interface SocialsProps {
-  link?: string
+  link: string
   iconClass: string
   accent: string
   parentHovered: boolean
-  copyText?: string
 }
 
-export default function Socials({
-  link,
-  iconClass,
-  accent,
-  parentHovered,
-  copyText,
-}: SocialsProps) {
+export default function Socials({ link, iconClass, accent, parentHovered }: SocialsProps) {
   const { angleToggled } = useAngleToggled()
 
   const striped: CSSProperties = {
@@ -26,21 +19,13 @@ export default function Socials({
     backgroundAttachment: 'scroll',
   }
 
-  const handleClick = () => {
-    if (copyText) {
-      navigator.clipboard.writeText(copyText)
-      alert(`Copied username ${copyText} to clipboard`)
-    } else if (link) {
-      window.open(link, '_blank')
-    }
-  }
-
   return (
-    <button
-      type="button"
-      className="rounded-full shadow-[inset_0_0_1px_1px_rgba(0,0,0,0.5)] border-0 bg-transparent p-0"
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-full shadow-[inset_0_0_1px_1px_rgba(0,0,0,0.5)] border-0 bg-transparent p-0 block"
       style={striped}
-      onClick={handleClick}
     >
       <div
         className={`relative animate-[startSocials_0.5s_ease-in-out] cursor-pointer rounded-full bg-baseClr px-2.5 py-1.5 transition-all duration-150 active:left-0 active:top-0 ${
@@ -49,6 +34,6 @@ export default function Socials({
       >
         <Icon icon={iconClass} className="text-2xl my-1" style={{ color: `var(--${accent})` }} />
       </div>
-    </button>
+    </a>
   )
 }

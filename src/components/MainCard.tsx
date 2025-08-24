@@ -69,7 +69,7 @@ export default function MainCard() {
             iconClass="mdi:discord"
             accent="lavender"
             parentHovered={hovered}
-            copyText="sens3459"
+            link="https://discord.com/users/722399437875576874"
           />
         </div>
       </div>
