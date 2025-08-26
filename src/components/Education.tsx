@@ -33,7 +33,7 @@ export default function Education() {
   ]
 
   return (
-    <StripedBox padClass="p-16 group">
+    <StripedBox padClass="p-16 group md:p-8">
       <div className="flex flex-col space-y-8">
         <div className="relative flex items-center space-x-3">
           <div className="absolute z-10 size-8 rounded-full bg-[var(--primary)]" />

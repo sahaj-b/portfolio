@@ -39,7 +39,7 @@ export default function ProjectCard({ project, setHoveredProjectSkills }: Projec
 
   return (
     <div
-      className="w-[calc(50%-20px)] rounded-xl border shadow-[inset_0_0_1px_1px_rgba(0,0,0,0.5)] md:w-full"
+      className="w-[calc(50%-20px)] rounded-xl border shadow-[inset_0_0_1px_1px_rgba(0,0,0,0.5)] md:max-w-[24rem] md:w-full"
       style={striped}
     >
       {/* biome-ignore lint/a11y/noStaticElementInteractions: card hover interaction design */}
