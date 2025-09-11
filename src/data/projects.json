@@ -48,12 +48,12 @@
   ],
   "other": [
     {
-      "name": "Flappy Bird Ninja",
-      "description": "Flappy Bird, but it can shoot shurikens to kill bad birds",
-      "github": "https://github.com/sahaj-b/flappy-bird-ninja",
-      "image": "./flappy.webp",
-      "skills": ["Python", "Pygame"],
-      "color": "sky"
+      "name": "Sound of Sorting",
+      "description": "Sorting algorithms visualizer with sonification and image sorting support. For the terminal",
+      "github": "https://github.com/sahaj-b/sound-of-sort",
+      "image": "./sound-of-sort.webp",
+      "skills": ["Golang"],
+      "color": "text"
     },
     {
       "name": "Wakafetch",
@@ -62,6 +62,14 @@
       "image": "./wakafetch.webp",
       "skills": ["Golang"],
       "color": "green"
+    },
+    {
+      "name": "Flappy Bird Ninja",
+      "description": "Flappy Bird, but it can shoot shurikens to kill bad birds",
+      "github": "https://github.com/sahaj-b/flappy-bird-ninja",
+      "image": "./flappy.webp",
+      "skills": ["Python", "Pygame"],
+      "color": "sky"
     },
     {
       "name": "Go-Attend",
@@ -94,14 +102,6 @@
       "image": "./dino.webp",
       "skills": ["Python"],
       "color": "green"
-    },
-    {
-      "name": "Automation Scripts",
-      "description": "Lot of Linux scripts for automating my workflow and enhancing productivity",
-      "github": "https://github.com/sahaj-b/dotfiles/tree/main/scripts",
-      "image": "./scripts.webp",
-      "skills": ["C++", "Bash", "Python"],
-      "color": "yellow"
     }
   ]
 }
